@@ -9,20 +9,20 @@
   <body>
     <div class="file-container">
       <header>
-        <h2>Your File Explorer</h2>
-        <p>Manage your files with ease</p>
+        <h2>File Explorer upload</h2>
+        <p>Pilih menu dibawah ini</p>
       </header>
       <div class="menu-bar">
         <button onclick="document.getElementById('file-upload').click()">
-          Upload File(s)
+          Upload File
         </button>
-        <button onclick="clearFiles()">Clear All Files</button>
+        <button onclick="clearFiles()">Hapus File</button>
         <button onclick="downloadAll()">Download All</button>
-        <button onclick="sortFiles()">Sort Files</button>
+        <button onclick="sortFiles()">Urutkan File</button>
       </div>
       <div id="file-explorer"></div>
       <input type="file" id="file-upload" style="display: none" multiple />
-      <p id="file-count">No files uploaded yet.</p>
+      <p id="file-count">Belum ada file yg di upload.</p>
     </div>
 
     <script src="app.js"></script>
