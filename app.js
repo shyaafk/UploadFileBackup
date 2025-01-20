@@ -1,7 +1,7 @@
 // Menyimpan kredensial login (contoh hardcoded untuk demo)
 const validCredentials = {
-  username: "admin",
-  password: "12345",
+  username: "Shya",
+  password: "12301",
 };
 
 // Menangani proses login
