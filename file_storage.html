@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Storage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="file-container">
+      <header>
+        <h2>Your File Explorer</h2>
+        <p>Manage your files with ease</p>
+      </header>
+      <div class="menu-bar">
+        <button onclick="document.getElementById('file-upload').click()">
+          Upload File(s)
+        </button>
+        <button onclick="clearFiles()">Clear All Files</button>
+        <button onclick="downloadAll()">Download All</button>
+        <button onclick="sortFiles()">Sort Files</button>
+      </div>
+      <div id="file-explorer"></div>
+      <input type="file" id="file-upload" style="display: none" multiple />
+      <p id="file-count">No files uploaded yet.</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/* Resetting margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #b1c6e3;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Container for content */
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 20px;
+}
+
+/* Header styling */
+h2 {
+  font-size: 2.5em;
+  color: #1d3df1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling (for Login) */
+.login-container,
+.file-container {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input fields */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#login-error {
+  font-size: 1.1em;
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* File Explorer styling */
+.file-container {
+  text-align: center;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.menu-bar button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 22%;
+}
+
+.menu-bar button:hover {
+  background-color: #0056b3;
+}
+
+#file-explorer {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+}
+
+#file-explorer .file-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+#file-explorer .file-item:hover {
+  background-color: #f1f1f1;
+}
+
+#file-explorer button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#file-explorer button:hover {
+  background-color: #218838;
+}
+
+#file-count {
+  font-size: 1.2em;
+  color: #444;
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .menu-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-bar button {
+    width: 100%;
+  }
+
+  #file-explorer .file-item {
+    font-size: 1em;
+  }
+}
